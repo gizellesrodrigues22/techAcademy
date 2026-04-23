@@ -3,6 +3,12 @@ import './index.css'
 import Tarjeta from './components/Tarjeta'
 
 function App() {
+
+  const persona = {
+    nombre: "Liliana",
+    edad: 40,
+    src: "https://e7.pngegg.com/pngimages/101/287/png-clipart-computer-icons-nanny-template-job-desktop-avatar-woman-template-child.png"
+  }
  
 
   return (
@@ -13,7 +19,7 @@ function App() {
       <Tarjeta src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVO4LSlzzN3vjB0C4LiWsqRG-iYFpJEvDHQ&s" nombre="Rossana" edad="46" />
       <Tarjeta src="https://e7.pngegg.com/pngimages/101/287/png-clipart-computer-icons-nanny-template-job-desktop-avatar-woman-template-child.png" nombre="Amanda" edad="43" />
 
-                  
+      <Tarjeta {...persona} />            
     </>
   )
 }
